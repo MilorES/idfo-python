@@ -4,6 +4,7 @@ apellido = 'Rojo' #str
 edad = 38 #int
 nota = 8.54 #float
 nombre_completo = f"{nombre} {apellido}"
+print(nombre_completo)
 print(f'Hola, me llamo {nombre} y tengo {edad} años')
 
 bAprobado = nota >= 5
@@ -26,7 +27,7 @@ else:
     print("Otros")
 
 # Resultados Oposicion
-experiencia_laboral = 8
+experiencia_laboral = 11
 puntosextras = 10 if experiencia_laboral >= 10 else 0 #Expresion if, one-liner
 if puntosextras == 10:
     print("Tienes puntuacion adicional")
@@ -52,8 +53,7 @@ print(nombre_completo[2:-2])
 for caracter in nombre_completo:
     print('Car:',caracter.upper())
 
-i = 0
+i = 3
 while i < len(nombre_completo):
     print('Car:',nombre_completo[i].upper())
-    i = i + 1
-
+    i = i + 4
