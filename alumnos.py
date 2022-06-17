@@ -1,3 +1,5 @@
+import calculadora as calc
+
 alumnos = [    ("Juan",9.5),
                 ("Maria",8.7),
                 ("Carlos",8.7),
@@ -10,11 +12,12 @@ def calcular_media(l_alumnos):
     media = 0.0
     for alumno in l_alumnos:
         #sumatorio_notas = sumatorio_notas + alumno[-1]
-        sumatorio_notas += alumno[1]
+        #sumatorio_notas += alumno[1]
+        sumatorio_notas = calc.sumar(sumatorio_notas,alumno[1])
     else:
-        media = sumatorio_notas / len(l_alumnos)
+        # media = sumatorio_notas / len(l_alumnos)
+        media = calc.dividir(sumatorio_notas, len(l_alumnos))
     return media
 
 resultado_media = calcular_media(alumnos)
 print(round(resultado_media,2))
-
