@@ -6,7 +6,8 @@ def diccionario_alta (clave, valor, diccionario):
 
 # Baja                                            
 def diccionario_baja(clave, diccionario):
-    del diccionario[clave]
+    if clave in diccionario:
+        del diccionario[clave]
     #return diccionario
 
 # Actualizar
