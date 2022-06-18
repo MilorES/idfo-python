@@ -1,8 +1,3 @@
-from asyncio.windows_events import NULL
-from pickle import TRUE
-from tkinter.tix import Tree
-
-
 nombre_completo = "Felipe Sanchez"
 copia_nombre_completo = nombre_completo[:]
 
