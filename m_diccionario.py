@@ -4,7 +4,7 @@ def diccionario_alta (clave, valor, diccionario):
     diccionario[clave] = valor
     return diccionario
 
-# Baja
+# Baja                                            
 def diccionario_baja(clave, diccionario):
     del diccionario[clave]
     return diccionario
