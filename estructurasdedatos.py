@@ -8,6 +8,7 @@ print(f"Tamaño tupla: {len(restaurte)}")
 print('-' * 60) # Separador
 
 # Tupla
+una_tupla = tuple()
 # Variable = Nombre, Telefono, Alta, Edad, Extrajero, Dinero
 cliente = ("Jose Antonio", "636772756", True, 38, False, 18.3)
 cliente2 = ("Juan Pablo","658975825",True, 41, True, 1000.05)
@@ -18,6 +19,7 @@ print(cliente[-1])
 print(f"Se llama {cliente2[0]} tiene el número de telefono {cliente2[1]}, Alta: {cliente2[2]} Edad: {cliente2[3]} Extranjero: {cliente2[4]} tiene {cliente2[5]} €")
 print('-' * 60) # Separador
 # Lista
+una_lista = list()
 nombres = ["Juan", "Maria", "Marcos", "Silvia"]
 print(nombres[1])
 print(nombres[-1])
@@ -50,3 +52,12 @@ print('-' * 60) # Separador
 productos.remove("Sal")
 print("Cuantas de sal:", productos.count("Sal"))
 print('-' * 60) # Separador
+
+# Eliminar
+try:
+    pos = productos.index("Sal")
+    del productos[pos]
+except ValueError:
+    print("Elemento no encontrado")
+productos.remove("Quicos")
+
