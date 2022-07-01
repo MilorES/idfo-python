@@ -1,4 +1,6 @@
 # Dupla
+from itertools import product
+
 restaurte = ("La Felicidad del Tapeo",972506550)
 # Imprimir dupla y separadores
 print(restaurte[0],restaurte[1],sep=": ")
@@ -9,6 +11,9 @@ print('-' * 60) # Separador
 
 # Tupla
 una_tupla = tuple()
+otra_tupla = 1, 2, 3
+tupla_cutre = 1,
+print(type(otra_tupla))
 # Variable = Nombre, Telefono, Alta, Edad, Extrajero, Dinero
 cliente = ("Jose Antonio", "636772756", True, 38, False, 18.3)
 cliente2 = ("Juan Pablo","658975825",True, 41, True, 1000.05)
@@ -57,7 +62,31 @@ print('-' * 60) # Separador
 try:
     pos = productos.index("Sal")
     del productos[pos]
-except ValueError:
-    print("Elemento no encontrado")
+except ValueError as e:
+    print(f"Elemento no encontrado {e}")
+except:
+    print("Error desconico")
+finally:
+    print("Siempre me ejecuto")
 productos.remove("Quicos")
 
+try:
+    productos[11]
+except IndexError as e:
+    print(e)
+except:
+    print("Error desconocido")
+productos.extend(["patata","lubina","Lengua de Vaca"])
+
+# Diccionario
+
+mi_diccionario = {1:'A', 2:'B'}
+mi_diccionario_vacio = dict()
+mi_otro_diccionario_vacio = {}
+
+# Conjunto
+print("-" * 30,"Conjuntos","-" * 30)
+mi_conjunto_vacio = set()
+mi_conjunto_creado_con_lista = set([1,2,3,4,4])
+mi_conjunto_1 = {1,2,3,3}
+mi_conjunto_2 = {1,2,4}
