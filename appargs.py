@@ -12,6 +12,7 @@ def crear_informe(res_proceso:int) -> str:
 
 # Programa Principal
 if __name__ == "__main__":
+    print(sys.argv[0]) # path con el programa
     # Recogida de argumentos o valor
     if len(sys.argv) == 3:
         carga = int(sys.argv[1])

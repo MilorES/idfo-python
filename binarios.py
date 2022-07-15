@@ -1,5 +1,4 @@
 import pickle
-from tkinter.messagebox import NO
 
 def guardar_usuarios(nombre_fichero:str,l_usuarios:list):
     
