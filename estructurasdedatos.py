@@ -68,7 +68,7 @@ except:
     print("Error desconico")
 finally:
     print("Siempre me ejecuto")
-productos.remove("Quicos")
+    productos.remove("Quicos")
 
 try:
     productos[11]
@@ -83,10 +83,44 @@ productos.extend(["patata","lubina","Lengua de Vaca"])
 mi_diccionario = {1:'A', 2:'B'}
 mi_diccionario_vacio = dict()
 mi_otro_diccionario_vacio = {}
+mi_diccionario_string = {"1":1,"2":3}
 
-# Conjunto
+print('-' * 60) # Separador
+print(mi_diccionario[1])
+print(mi_diccionario_string["2"])
+
+mi_diccionario[3] = 'C' # Alta
+mi_diccionario_string["3"] = 3 # Alta
+
+print("-" * 60) # Mostrar
+for item in mi_diccionario.items():
+    print(item[0], "se define como", item[1], sep=' / ')
+
+del mi_diccionario[3] # Borrar
+if(mi_diccionario.get(3) is None): # ¿Existe?
+    print("No existe el elemento en el diccionario")
+
+# Conjunto, elementos NO ORDENADOS y SIN REPETICIONES
 print("-" * 30,"Conjuntos","-" * 30)
 mi_conjunto_vacio = set()
 mi_conjunto_creado_con_lista = set([1,2,3,4,4])
 mi_conjunto_1 = {1,2,3,3}
 mi_conjunto_2 = {1,2,4}
+
+for item in mi_conjunto_1: # Mostrar
+    print(item)
+
+mi_conjunto_1.add(1)
+
+print("Intersecion")
+print(len(mi_conjunto_1.intersection(mi_conjunto_2)))
+print(mi_conjunto_1.intersection(mi_conjunto_2))
+
+print("Diferencia")
+print(len(mi_conjunto_1.difference(mi_conjunto_2)))
+print(mi_conjunto_1.difference(mi_conjunto_2))
+
+
+print("Union")
+print(len(mi_conjunto_1.union(mi_conjunto_2)))
+print(mi_conjunto_1.union(mi_conjunto_2))
