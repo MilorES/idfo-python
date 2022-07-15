@@ -1,5 +1,4 @@
 # Dupla
-from itertools import product
 
 restaurte = ("La Felicidad del Tapeo",972506550)
 # Imprimir dupla y separadores
