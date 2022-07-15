@@ -1,4 +1,4 @@
-from array import array
+import array
 class Propietario:
     @property
     def nombre(self):
