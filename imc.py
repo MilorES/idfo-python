@@ -5,7 +5,9 @@ Normal imc > 18.5 %% 25 < imc
 Overweight imc > 25 a imc < 30
 Obesity imc > 30
 '''
+print("Introduce el peso:")
 peso = float(input())
+print("Introduce la altura")
 altura = float(input())
 #imc = peso / (altura * altura)
 imc = peso / altura**2
